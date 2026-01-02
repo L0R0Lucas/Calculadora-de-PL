@@ -1,10 +1,12 @@
 // ==UserScript==
-// @name         Calculadora PL
-// @namespace    https://github.com/L0R0Lucas/Calculadora-de-PL
+// @name         Calculadora Parcela Leve
+// @namespace    https://github.com/L0R0Lucas/Utilidade-e-eficiencia
 // @version      1.0
-// @description  Calculadora Parcela Leve para simulador de preços no SalesForce
+// @description  Calcula automaticamente Parcela Leve 1, 2 e 3 a partir do valor bruto e duração do curso
 // @author       L0R0Lucas
-// @match        https://yduqs2020.my.site.com/PolosSite/s/simulador-de-preco
+// @match        https://yduqs2020.my.site.com/PolosSite/s/simulador-de-preco*
+// @updateURL    https://raw.githubusercontent.com/L0R0Lucas/Utilidade-e-eficiencia/main/scripts/Calculadora-de-PL.user.js
+// @downloadURL  https://raw.githubusercontent.com/L0R0Lucas/Utilidade-e-eficiencia/main/scripts/Calculadora-de-PL.user.js
 // @grant        none
 // ==/UserScript==
 
@@ -122,5 +124,6 @@
 
   document.getElementById('pl-vb').addEventListener('input', atualizar);
   document.getElementById('pl-anos').addEventListener('input', atualizar);
+
 
 })();
